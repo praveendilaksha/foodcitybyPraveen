@@ -38,7 +38,7 @@ public class product_data_loadTest {
  
     @Test
     public void testProductList() {
-        System.out.println("ProductList");
+        System.out.println("Product List Loaded!");
         product_data_load instance = new product_data_load();
         ArrayList<product> result = instance.ProductList();
         assertNotNull("ProductList should not return null", result);
@@ -46,13 +46,13 @@ public class product_data_loadTest {
     }
     @Test
     public void testShow_product_data() {
-        System.out.println("show_product_data");
+        System.out.println("Product Data Loaded");
         product_data_load instance = new product_data_load();
         instance.show_product_data();
     }
     @Test
     public void testMain() {
-        System.out.println("main");
+        System.out.println("Product Details Check");
         String[] args = new String[0];
         product_data_load.main(args);
     }

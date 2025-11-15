@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author JINOOSHAN
+ * @author Praveen
  */
 public class Best_Selling_ProductsIT {
     

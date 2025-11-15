@@ -6,7 +6,7 @@ package code;
 
 /**
  *
- * @author JINOOSHAN
+ * @author Praveen
  */
 public class product {
     int tra_id;

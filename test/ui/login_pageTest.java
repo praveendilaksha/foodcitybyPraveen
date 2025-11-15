@@ -16,7 +16,7 @@ import java.sql.ResultSet;
 
 /**
  *
- * @author JINOOSHAN
+ * @author Praveen
  */
 public class login_pageTest {
     
@@ -44,7 +44,7 @@ public class login_pageTest {
      */
     @Test
     public void testMain() {
-        System.out.println("main");
+        System.out.println("Login Test");
         String[] args = null;
         login_page.main(args);
         // TODO review the generated test code and remove the default call to fail.
@@ -52,13 +52,13 @@ public class login_pageTest {
     }
     @Test
 public void testValidLogin() {
-    System.out.println("Login Test - Valid Credentials");
+    System.out.println("Credentials Matching");
     try {
         //Connect to database
         Connection con = database.db.getConnection();
         assertNotNull("DB connection should not be null", con);
         //Perform same check as login_page
-        String sql = "SELECT * FROM user WHERE user_name='admin1' AND password='admin1'  AND role = 'admin'";
+        String sql = "SELECT * FROM user WHERE user_name='admin' AND password='admin'  AND role = 'admin'";
         PreparedStatement ps = con.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
         // Result should be TRUE

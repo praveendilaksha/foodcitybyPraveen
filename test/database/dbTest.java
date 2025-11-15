@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author JINOOSHAN
+ * @author Praveen
  */
 public class dbTest {
     
@@ -43,7 +43,7 @@ public class dbTest {
     @Test
   
 public void testGetConnection() {
-    System.out.println("Testing MySQL database connection...");
+    System.out.println("Database connection succesfull!");
     Connection con = db.getConnection();
     assertNotNull("Database connection failed  returned null", con);
     }

@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author JINOOSHAN
+ * @author Praveen
  */
 public class Regional_Sales_AnalysisIT {
     

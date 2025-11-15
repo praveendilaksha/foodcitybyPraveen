@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author JINOOSHAN
+ * @author Praveen
  */
 public class loadDataIT {
 
@@ -45,7 +45,7 @@ public class loadDataIT {
     @Test
     public void testLoadcsv() {
         System.out.println("loadcsv");
-        File file = new File("C:\\Users\\JINOOSHAN\\Documents\\4th sem\\apdp\\supermarket_sales.csv");
+        File file = new File("C:\\Users\\Praveen\\Downloads\\supermarket_sales.csv");
         List<readcsv> expResult = null;
         List<readcsv> result = loadData.loadcsv(file);
         assertEquals(expResult, result);

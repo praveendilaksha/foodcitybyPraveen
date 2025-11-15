@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author JINOOSHAN
+ * @author Praveen
  */
 public class loadDataTest {
 
@@ -45,8 +45,8 @@ public class loadDataTest {
     @Test
 
     public void testLoadcsv() {
-        System.out.println("loadcsv");
-        File file = new File("C:\\Users\\JINOOSHAN\\Documents\\4th sem\\apdp\\supermarket_sales.csv");
+        System.out.println("CSV Loaded");
+        File file = new File("C:\\Users\\Praveen\\Downloads\\supermarket_sales.csv");
         List<readcsv> result = loadData.loadcsv(file);
         assertNotNull(result);
         assertTrue("CSV should contain data", result.size() > 0);
